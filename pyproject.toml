@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insighta"
+version = "1.0.0"
+dependencies = [
+    "requests",
+    "typer",
+    "rich"
+]
+
+[project.scripts]
+insighta = "insighta.main:app"
