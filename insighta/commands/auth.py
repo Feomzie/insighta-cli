@@ -122,4 +122,4 @@ def whoami():
         res = request("GET", "/auth/me")
         data = res.json().get("data", {})
     
-    console.print(f"[bold green]{data}[/bold green]")
+    console.print(f"[bold green]{data['username']}[/bold green]")
